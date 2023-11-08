@@ -24,10 +24,6 @@ class User extends Authenticatable
         'is_admin',
     ];
 
-    protected $casts = [
-        'is_admin' => 'bool',
-    ];
-
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -46,5 +42,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'is_admin' => 'bool',
     ];
 }
